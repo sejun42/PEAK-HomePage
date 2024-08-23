@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - PEAK</title>
+    <link rel="icon" href="로고.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 10px 20px;
+            align-items: center;
+            margin-top: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            padding: 10px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px;
+        }
+        .product-item {
+            text-align: center;
+            width: 300px;
+        }
+        .product-item img {
+            width: 100%;
+            transition: opacity 0.3s ease;
+        }
+        .product-item img.second {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        .product-item:hover img.first {
+            opacity: 0;
+        }
+        .product-item:hover img.second {
+            opacity: 1;
+        }
+        .coming-soon {
+            text-align: center;
+            width: 300px;
+            font-size: 24px;
+            color: #ccc;
+            line-height: 400px; /* 이미지 크기에 맞게 중앙 정렬 */
+            border: 2px dashed #ccc;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 10px 10px;
+            border-top: 1px solid #ddd;
+            font-size: small;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px;
+            margin-top: 30px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href="shop.html">Shop</a>
+            <a href="archive.html">Archive</a>
+            <a href="vue.html">Vue</a>
+            <a href="stockists.html">Stockists</a>
+        </div>
+        <div class="logo">
+            <a href="index.html">PEAK</a>
+        </div>
+        <div>
+            <a href="eng.html">ENG</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html">Cart(0)</a>
+        </div>
+    </div>
+
+    <div class="products">
+        <!-- 첫 번째 제품 -->
+        <div class="product-item">
+            <div class="product-image">
+                <img src="티셔츠1.jpg" class="first" alt="Product 1 Front">
+                <img src="티셔츠2.png" class="second" alt="Product 1 Back">
+            </div>
+            <p>'KUBO' AEROGEM T-SHIRTS PEARL GREY</p>
+            <p>KRW 69,000</p>
+        </div>
+
+        <!-- Coming Soon -->
+        <div class="coming-soon">
+            Coming Soon
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <p>&copy; PEAK, inc. CEO CHOI MARU, CHO IN HO | CONTACT 010-2828-9410, 010-2498-7854 | ONE-LINE REGISTER  | BUSINESS LICENSE (사업자 등록 번호) | 영문 주소</p>
+        </div>
+        <div>
+            <br>
+            <a href="faqs.html">FAQs</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms of Use</a>
+            <a href="https://www.instagram.com/cho1maru/" target="_blank">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>
